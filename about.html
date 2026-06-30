@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Сайт о фобиях — узнайте о распространённых страхах, пройдите тест и узнайте к какому специалисту обратиться">
+    <meta name="keywords" content="фобии, страхи, психология, тест на фобии, психолог">
+    <title>Фобиям нет — О фобиях</title>
+
+    <!-- Open Graph для соцсетей -->
+    <meta property="og:title" content="О фобиях — Фобиям нет">
+    <meta property="og:description" content="Информация о распространённых фобиях, мини-тест на самодиагностику и советы к кому обратиться за помощью">
+    <meta property="og:image" content="images/logo.png">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__inner">
+
+            <!-- Логотип -->
+            <a href="index.html" class="logo" title="Фобиям нет — на главную">
+                <svg class="logo__wave" viewBox="0 0 50 25" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M 0 12 C 6 4, 12 4, 18 12 C 24 20, 30 20, 36 12 C 42 4, 46 4, 50 12" stroke="#4ECDC4" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                    <path d="M 0 12 C 6 4, 12 4, 18 12 C 24 20, 30 20, 36 12 C 42 4, 46 4, 50 12" stroke="#4ECDC4" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.4" transform="translate(0, 6)"/>
+                </svg>
+                <span class="logo__text">Фобиям нет</span>
+            </a>
+
+            <!-- Навигация -->
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link" title="Главная страница">Главная</a></li>
+                    <li><a href="about.html" class="nav__link nav__link--active" title="О фобиях">О фобиях</a></li>
+                    <li><a href="about.html#contact" class="nav__link" title="К кому обратиться">К кому обратиться</a></li>
+                </ul>
+            </nav>
+
+            <!-- Кнопка -->
+            <a href="index.html#test" class="btn header__btn" title="Пройти тест на фобии">Пройти тест</a>
+
+            <!-- Гамбургер -->
+            <button class="hamburger" id="hamburger" aria-expanded="false">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </button>
+
+        </div>
+    </header>
+
+    <!-- Заголовок страницы -->
+    <section class="page-hero">
+        <h1 class="page-hero__title">О фобиях</h1>
+        <p class="page-hero__subtitle">Всё что нужно знать о страхах</p>
+    </section>
+
+    <!-- Виды фобий -->
+    <section class="section section--light" id="types">
+        <div class="section__inner">
+            <h2 class="section__title">Виды фобий</h2>
+
+            <!-- Карточки -->
+            <div class="types__grid">
+
+                <article class="type-card">
+                    <h3 class="type-card__title">Социальные фобии</h3>
+                    <p class="type-card__desc">
+                        Страх социальных ситуаций — публичных выступлений, знакомств,
+                        оценки окружающих. Человек избегает общества из-за страха осуждения.
+                    </p>
+                </article>
+
+                <article class="type-card">
+                    <h3 class="type-card__title">Специфические фобии</h3>
+                    <p class="type-card__desc">
+                        Иррациональный страх конкретного объекта или ситуации — змей,
+                        крови, инъекций, грозы. Самый распространённый вид фобий.
+                    </p>
+                </article>
+
+                <article class="type-card">
+                    <h3 class="type-card__title">Агорафобия</h3>
+                    <p class="type-card__desc">
+                        Страх открытых пространств, толпы и мест из которых сложно
+                        выбраться. Часто развивается после панических атак.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Как это работает -->
+    <section class="section section--dark" id="how">
+        <div class="how__inner">
+
+            <!-- Текст -->
+            <div class="how__text-block">
+                <h2 class="how__title">Как это работает</h2>
+                <p class="how__desc">
+                    Фобия возникает как реакция мозга на воспринимаемую угрозу.
+                    Даже если опасности нет — мозг запускает цепочку реакций
+                    которая вызывает панику и желание избежать источника страха.
+                </p>
+            </div>
+
+            <!-- Схема -->
+            <div class="how__scheme">
+                <div class="how__step">Триггер</div>
+                <span class="how__arrow">→</span>
+                <div class="how__step">Реакция</div>
+                <span class="how__arrow">→</span>
+                <div class="how__step">Страх</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- К кому обратиться -->
+    <section class="section section--light" id="contact">
+        <div class="section__inner">
+            <h2 class="section__title">К кому обратиться</h2>
+
+            <!-- Карточки -->
+            <div class="contact__grid">
+                <article class="contact-card">
+                    <h3 class="contact-card__title">Психолог</h3>
+                    <p class="contact-card__desc">
+                        Поможет разобраться в причинах страха через беседу и упражнения.
+                        Подходит если фобия не сильно мешает жизни.
+                    </p>
+                </article>
+
+                <article class="contact-card">
+                    <h3 class="contact-card__title">Психотерапевт</h3>
+                    <p class="contact-card__desc">
+                        Проведёт курс терапии — КПТ или экспозиционную терапию.
+                        Подходит при выраженных фобиях которые мешают жить.
+                    </p>
+                </article>
+
+                <article class="contact-card">
+                    <h3 class="contact-card__title">Психиатр</h3>
+                    <p class="contact-card__desc">
+                        Назначит медикаментозное лечение если фобия сопровождается
+                        паническими атаками или тяжёлой тревогой.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--dark" id="faq">
+        <div class="section__inner">
+            <h2 class="section__title">Частые вопросы</h2>
+
+            <!-- Вопросы -->
+            <ul class="faq__list">
+
+                <!-- раскрытый -->
+                <li class="faq__item faq__item--open">
+                    <button class="faq__question" aria-expanded="true" title="Фобия — это болезнь?">
+                        Фобия — это болезнь?
+                        <span class="faq__arrow">▼</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">
+                            Фобия — это психическое расстройство которое поддаётся лечению.
+                            Это не слабость характера, а особенность работы нервной системы.
+                            При правильной помощи от фобии можно избавиться полностью.
+                        </p>
+                    </div>
+                </li>
+
+                <li class="faq__item">
+                    <button class="faq__question" aria-expanded="false" title="Можно ли избавиться от фобии самостоятельно?">
+                        Можно ли избавиться от фобии самостоятельно?
+                        <span class="faq__arrow">▼</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">
+                            В лёгких случаях — да. Дыхательные техники и постепенное
+                            столкновение со страхом помогают. Но при сильных фобиях
+                            лучше обратиться к специалисту.
+                        </p>
+                    </div>
+                </li>
+
+                <li class="faq__item">
+                    <button class="faq__question" aria-expanded="false" title="Как долго длится лечение?">
+                        Как долго длится лечение?
+                        <span class="faq__arrow">▼</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">
+                            Зависит от вида и степени фобии. Короткий курс КПТ
+                            занимает от 8 до 15 сессий. Некоторые фобии проходят
+                            за несколько недель интенсивной работы.
+                        </p>
+                    </div>
+                </li>
+
+                <li class="faq__item">
+                    <button class="faq__question" aria-expanded="false" title="Фобии передаются по наследству?">
+                        Фобии передаются по наследству?
+                        <span class="faq__arrow">▼</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p class="faq__answer-text">
+                            Генетическая предрасположенность к тревожности существует,
+                            но конкретная фобия не наследуется напрямую. Большую роль
+                            играют опыт и окружение в детстве.
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__inner">
+
+            <!-- Логотип -->
+            <a href="index.html" class="logo" title="Фобиям нет — на главную">
+                <svg class="logo__wave" viewBox="0 0 50 25" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M 0 12 C 6 4, 12 4, 18 12 C 24 20, 30 20, 36 12 C 42 4, 46 4, 50 12" stroke="#4ECDC4" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                    <path d="M 0 12 C 6 4, 12 4, 18 12 C 24 20, 30 20, 36 12 C 42 4, 46 4, 50 12" stroke="#4ECDC4" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.4" transform="translate(0, 6)"/>
+                </svg>
+                <span class="logo__text">Фобиям нет</span>
+            </a>
+
+            <!-- Навигация -->
+            <nav class="footer__nav">
+                <a href="index.html" class="footer__link" title="Главная">Главная</a>
+                <a href="about.html" class="footer__link footer__link--active" title="О фобиях">О фобиях</a>
+                <a href="about.html#contact" class="footer__link" title="К кому обратиться">К кому обратиться</a>
+            </nav>
+
+            <!-- Дисклеймер -->
+            <p class="footer__disclaimer">Сайт не является медицинским ресурсом</p>
+
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

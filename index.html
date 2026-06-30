@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Сайт о фобиях — узнайте о распространённых страхах, пройдите тест и узнайте к какому специалисту обратиться">
+    <meta name="keywords" content="фобии, страхи, психология, тест на фобии, психолог">
+    <title>Фобиям нет — Главная</title>
+
+    <!-- Open Graph для соцсетей-->
+    <meta property="og:title" content="Фобиям нет — узнай свои страхи">
+    <meta property="og:description" content="Информация о распространённых фобиях, мини-тест на самодиагностику и советы к кому обратиться за помощью">
+    <meta property="og:image" content="images/logo.png">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__inner">
+
+            <!-- Логотип -->
+            <a href="index.html" class="logo" title="Фобиям нет — на главную">
+                <svg class="logo__wave" viewBox="0 0 50 25" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M 0 12 C 6 4, 12 4, 18 12 C 24 20, 30 20, 36 12 C 42 4, 46 4, 50 12" stroke="#4ECDC4" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                    <path d="M 0 12 C 6 4, 12 4, 18 12 C 24 20, 30 20, 36 12 C 42 4, 46 4, 50 12" stroke="#4ECDC4" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.4" transform="translate(0, 6)"/>
+                </svg>
+                <span class="logo__text">Фобиям нет</span>
+            </a>
+
+            <!-- Навигация -->
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link nav__link--active" title="Главная страница">Главная</a></li>
+                    <li><a href="about.html" class="nav__link" title="О фобиях">О фобиях</a></li>
+                    <li><a href="about.html#contact" class="nav__link" title="К кому обратиться">К кому обратиться</a></li>
+                </ul>
+            </nav>
+
+            <!-- Кнопка -->
+            <a href="#test" class="btn header__btn" title="Пройти тест на фобии">Пройти тест</a>
+
+            <!-- Гамбургер меню -->
+            <button class="hamburger" id="hamburger" aria-expanded="false">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </button>
+
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero__inner">
+            <h1 class="hero__title">Страх — это не слабость. Это сигнал.</h1>
+            <p class="hero__subtitle">Узнай свои страхи и научись с ними жить</p>
+            <a href="#test" class="hero__btn" title="Начать тест">Начать</a>
+        </div>
+    </section>
+
+    <!-- Что такое фобия -->
+    <section class="section section--light">
+        <div class="about-phobia__inner">
+
+            <!-- Текст -->
+            <div class="about-phobia__text-block">
+                <h2 class="about-phobia__title">Что такое фобия?</h2>
+                <p class="about-phobia__text">
+                    Фобия — это сильный и необоснованный страх перед определённым объектом,
+                    ситуацией или явлением. В отличие от обычного страха, фобия вызывает
+                    панику даже при мысли об источнике тревоги и мешает нормальной жизни.
+                </p>
+            </div>
+
+            <!-- Иллюстрация -->
+            <div class="about-phobia__image">
+                <img src="images/illustration.png" alt="Иллюстрация — человек с волнами тревоги">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Каталог  -->
+    <section class="section section--dark" id="phobias">
+        <div class="section__inner">
+            <h2 class="section__title">Распространённые фобии</h2>
+
+            <!-- Карточки -->
+            <div class="cards__grid">
+
+                <article class="card">
+                    <div class="card__overlay">
+                        <img src="images/spider.png" alt="Паук — символ арахнофобии">
+                    </div>
+                    <h3 class="card__name">Арахнофобия</h3>
+                    <p class="card__desc">Страх пауков и паукообразных</p>
+                </article>
+
+                <article class="card">
+                    <div class="card__overlay">
+                        <img src="images/box.png" alt="Коробка — символ клаустрофобии">
+                    </div>
+                    <h3 class="card__name">Клаустрофобия</h3>
+                    <p class="card__desc">Страх замкнутых пространств</p>
+                </article>
+
+                <article class="card">
+                    <div class="card__overlay">
+                        <img src="images/people.png" alt="Люди — символ социофобии">
+                    </div>
+                    <h3 class="card__name">Социофобия</h3>
+                    <p class="card__desc">Страх общения и осуждения</p>
+                </article>
+
+                <article class="card">
+                    <div class="card__overlay">
+                        <img src="images/airplane.png" alt="Самолёт — символ аэрофобии">
+                    </div>
+                    <h3 class="card__name">Аэрофобия</h3>
+                    <p class="card__desc">Страх полётов и высоты</p>
+                </article>
+
+                <article class="card">
+                    <div class="card__overlay">
+                        <img src="images/mountain.png" alt="Гора — символ акрофобии">
+                    </div>
+                    <h3 class="card__name">Акрофобия</h3>
+                    <p class="card__desc">Страх открытых высоких мест</p>
+                </article>
+
+                <article class="card">
+                    <div class="card__overlay">
+                        <img src="images/moon.png" alt="Луна — символ никтофобии">
+                    </div>
+                    <h3 class="card__name">Никтофобия</h3>
+                    <p class="card__desc">Страх темноты и ночи</p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Мини-тест -->
+    <section class="test" id="test">
+        <div class="test__inner">
+            <h2 class="test__title">Проверь себя</h2>
+            <p class="test__question" id="test-question">Чувствуете ли вы себя спокойно в помещении полном людей?</p>
+
+            <div class="test__buttons" id="test-buttons">
+                <button class="test__btn" id="btn-yes" title="Ответить Да">Да</button>
+                <button class="test__btn" id="btn-no" title="Ответить Нет">Нет</button>
+            </div>
+
+            <!-- Прогресс бар -->
+            <div class="test__progress">
+                <div class="test__progress-fill" id="progress-fill"></div>
+            </div>
+
+            <!-- Результат -->
+            <div class="test__result" id="test-result"></div>
+        </div>
+    </section>
+
+    <!-- CTA блок -->
+    <section class="cta">
+        <h2 class="cta__title">Не знаешь с чего начать?</h2>
+        <p class="cta__subtitle">Мы подскажем к кому обратиться</p>
+        <a href="about.html#contact" class="cta__btn" title="Узнать больше о специалистах">Узнать больше</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__inner">
+
+            <!-- Логотип -->
+            <a href="index.html" class="logo" title="Фобиям нет — на главную">
+                <svg class="logo__wave" viewBox="0 0 50 25" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M 0 12 C 6 4, 12 4, 18 12 C 24 20, 30 20, 36 12 C 42 4, 46 4, 50 12" stroke="#4ECDC4" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                    <path d="M 0 12 C 6 4, 12 4, 18 12 C 24 20, 30 20, 36 12 C 42 4, 46 4, 50 12" stroke="#4ECDC4" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.4" transform="translate(0, 6)"/>
+                </svg>
+                <span class="logo__text">Фобиям нет</span>
+            </a>
+
+            <!-- Навигация -->
+            <nav class="footer__nav">
+                <a href="index.html" class="footer__link footer__link--active" title="Главная">Главная</a>
+                <a href="about.html" class="footer__link" title="О фобиях">О фобиях</a>
+                <a href="about.html#contact" class="footer__link" title="К кому обратиться">К кому обратиться</a>
+            </nav>
+
+            <!-- Дисклеймер -->
+            <p class="footer__disclaimer">Сайт не является медицинским ресурсом</p>
+
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
